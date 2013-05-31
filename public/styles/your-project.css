@@ -1,0 +1,275 @@
+html {
+  font-family: Arial, Helvetica, serif;
+  font-size: 15px;
+  color: #333;
+}
+
+body {
+  background: url("images/background--main-top.jpg") no-repeat;
+  height: 1280px;
+  margin: 0;
+  min-width: 700px;
+  padding: 0;
+  width: 100%;
+}
+@media (min-width: 1280px) {
+  body {
+    background: url("images/background--main-top.jpg") no-repeat, url("images/background--main-top-flipped.jpg") 1280px top no-repeat;
+  }
+}
+
+/* ==================
+ * Utility
+ * ================== */
+.hide-text {
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer {
+  background: rgba(17, 17, 17, 0.8);
+  color: white;
+  height: 50px;
+  padding: 0 5em;
+  transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+}
+footer:hover {
+  background: rgba(17, 17, 17, 0.3);
+}
+footer a, footer a:visited {
+  color: #f0cd6f;
+  text-decoration: none;
+}
+footer .credit {
+  float: right;
+}
+
+/* ==================
+ * Absolutely Positioned Objects
+ * ================== */
+.object {
+  position: absolute;
+}
+
+@media (min-width: 1030px) {
+  a.object {
+    opacity: .7;
+    transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+  }
+  a.object:hover, a.object:active, a.object:focus {
+    opacity: 1;
+  }
+}
+
+/* ==================
+ * Alvin Sherman Library
+ */
+.object--asl {
+  right: 0;
+  top: 0;
+}
+@media (min-width: 1280px) {
+  .object--asl {
+    right: auto;
+    margin-left: 579px;
+  }
+}
+
+/* ==================
+ * Grass Overlay
+ */
+.object--grass {
+  background: url("images/object--grass.png") repeat-x;
+  height: 185px;
+  width: 100%;
+  max-width: 1280px;
+}
+
+/* ==================
+ * Dig into Reading
+ */
+.object--dig {
+  background: url("images/object--dig.png") no-repeat;
+  height: 326px;
+  top: 360px;
+  width: 409px;
+}
+@media (min-width: 1024px) {
+  .object--dig {
+    left: 100px;
+  }
+}
+
+/* ==================
+ * Beneath the Surface
+ */
+.object--beneath {
+  background: url("images/object--beneath.png") no-repeat;
+  background-size: 700px 323px;
+  height: 323px;
+  top: 690px;
+  width: 700px;
+}
+@media (min-width: 1024px) {
+  .object--beneath {
+    background-size: 780px 360px;
+    height: 360px;
+    right: 0;
+    top: 645px;
+    width: 780px;
+  }
+}
+@media (min-width: 1200px) {
+  .object--beneath {
+    top: 557px;
+  }
+}
+@media (min-width: 1280px) {
+  .object--beneath {
+    margin-left: 480px;
+    right: auto;
+  }
+}
+
+/* ==================
+ *  Groundbreaking Reads
+ */
+.object--reads {
+  background: url("images/object--reads.png") no-repeat;
+  background-size: 700px 243px;
+  height: 243px;
+  top: 1020px;
+  width: 700px;
+}
+@media (min-width: 1024px) {
+  .object--reads {
+    right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .object--reads {
+    top: 940px;
+  }
+}
+@media (min-width: 1280px) {
+  .object--reads {
+    margin-left: 526px;
+    right: auto;
+  }
+}
+
+/* ==================
+ *  Dinosaur
+ */
+@media (min-width: 1024px) {
+  .object--dinosaur {
+    background: url("images/object--dinosaur.png") no-repeat;
+    height: 328px;
+    right: 30px;
+    top: 300px;
+    transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    transition: 2s all ease-out;
+    -webkit-transition: 2s all ease-out;
+    width: 446px;
+  }
+  .object--dinosaur:hover {
+    transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+  }
+}
+@media (min-width: 1024px) and (min-width: 1140px) {
+  .object--dinosaur {
+    left: 0;
+    right: auto;
+    top: 750px;
+    transform: rotate(80deg);
+    -ms-transform: rotate(80deg);
+    -webkit-transform: rotate(80deg);
+  }
+  .object--dinosaur:hover {
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+  }
+}
+@media (min-width: 1024px) and (min-width: 1200px) {
+  .object--dinosaur {
+    left: 50px;
+    top: 700px;
+    transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+  }
+  .object--dinosaur:hover {
+    transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+  }
+}
+
+.object--credit {
+  background: url("images/object--credit.png") right no-repeat;
+  background-size: 526px 182px;
+  height: 225px;
+  right: 36px;
+  top: 499px;
+  width: 290px;
+}
+@media (min-width: 1024px) {
+  .object--credit {
+    left: 34px;
+    right: auto;
+    top: 978px;
+  }
+}
+@media (min-width: 1140px) {
+  .object--credit {
+    left: 522px;
+    top: 430px;
+    width: 454px;
+  }
+}
+@media (min-width: 1200px) {
+  .object--credit {
+    left: 20px;
+    width: 526px;
+    top: 1050px;
+  }
+}
+
+.object--broward-county {
+  background: url("images/object--broward-county.png") no-repeat;
+}
+@media (min-width: 1024px) {
+  .object--broward-county {
+    height: 66px;
+    width: 150px;
+    left: 42px;
+    top: 1136px;
+  }
+}
+@media (min-width: 1140px) {
+  .object--broward-county {
+    left: 991px;
+    top: 523px;
+  }
+}
+@media (min-width: 1200px) {
+  .object--broward-county {
+    top: 1210px;
+    left: 266px;
+  }
+}

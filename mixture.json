@@ -1,0 +1,23 @@
+{
+    "debug": false,
+    "lintScripts": false,
+    "preprocessorLocations": "public",
+    "preprocessorScriptOutput": "public/scripts",
+    "preprocessorStyleOutput": "public/styles",
+    "projectName": "sherman--summer_lander",
+    "projectDescription": "Quick start Compass with Mixture, Compass is an open-source CSS Authoring Framework.",
+    "publishedId": null,
+    "serverHostname": "localhost",
+    "serverPort": null,
+    "templateDirectory": "templates",
+    "templateDefaultLayout": "layout",
+    "templateDefaultPage": "index",
+    "type": "mixture",
+    "useCompass": true,
+    "simpleModePartnerServer": null,
+    "modelSource": null,
+    "domain": null,
+    "convertHtmlOutput": null,
+    "followLeader": true,
+    "routes": null
+}
